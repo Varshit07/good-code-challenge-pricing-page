@@ -14,6 +14,8 @@ html {
 
   body {
     font-family: 'DM Sans', serif;
+    margin: 0;
+    padding: 0;
   }
   h1, h3 {
 text-align: center;  
@@ -22,10 +24,13 @@ text-align: center;
     font-size: 64px;
 }
 h3 {
-    font-size: 18px;;
+    color: #211D1D;
+    font-size: 18px;
+    font-weight: 100;
 }
 h3 .highlight {
     color: #32BBA4;
+    font-weight: 700;
 }
 .container {
     margin: 0 auto;
@@ -34,10 +39,11 @@ h3 .highlight {
 
 .row:first-child {
     background: url('../images/Mask Group 1.png'), #F9FFF2;
+    height: 500px;
 }
 
 .navigation-bar {
-    width: 80%;  
+    width: 70%;  
     margin: 0 auto;
 }
 .pricing-text {
@@ -45,7 +51,9 @@ h3 .highlight {
     max-width: 32%;
 }
 
-
+nav * {
+    cursor: pointer;
+}
 nav .logo {
     float: left;
     clear: right;
@@ -59,10 +67,22 @@ nav button {
     outline: none;
     font-weight: 700;
     size: 18px;
-    border-radius: 2px;
-    z-index: 5;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 nav a{
     text-decoration: none;
     color: #8E8E8E;
+}
+
+.nav-right {
+    float: right;
+    /* clear: both; */
+}
+
+.nav-right a, .nav-right button {
+    margin-left: 20px;
 }
