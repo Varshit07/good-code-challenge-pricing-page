@@ -1,0 +1,68 @@
+
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+    box-sizing: border-box;
+  }
+  /* inherit border-box on all elements in the universe and before and after
+   */
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'DM Sans', serif;
+  }
+  h1, h3 {
+text-align: center;  
+}
+  h1 {
+    font-size: 64px;
+}
+h3 {
+    font-size: 18px;;
+}
+h3 .highlight {
+    color: #32BBA4;
+}
+.container {
+    margin: 0 auto;
+	float: none;
+}
+
+.row:first-child {
+    background: url('../images/Mask Group 1.png'), #F9FFF2;
+}
+
+.navigation-bar {
+    width: 80%;  
+    margin: 0 auto;
+}
+.pricing-text {
+    margin: 0 auto;
+    max-width: 32%;
+}
+
+
+nav .logo {
+    float: left;
+    clear: right;
+}
+nav button {
+    background-color: #410FF8;
+    padding: 8px 25px;
+    color: white;
+    font: inherit;
+    border: 0;
+    outline: none;
+    font-weight: 700;
+    size: 18px;
+    border-radius: 2px;
+    z-index: 5;
+}
+nav a{
+    text-decoration: none;
+    color: #8E8E8E;
+}
