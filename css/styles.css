@@ -1,64 +1,54 @@
-
-/* Border box declaration 
-https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
     box-sizing: border-box;
-  }
-  /* inherit border-box on all elements in the universe and before and after
-   */
-  *, 
-  *:before, 
-  *:after {
-    box-sizing: inherit;
-  }
+}
 
-  body {
-    font-family: 'DM Sans', serif;
+*, 
+*:before, 
+*:after {
+box-sizing: inherit;
+}
+
+body {
+    font-family: DM Sans, serif;
     margin: 0;
     padding: 0;
-  }
-  h1, h3 {
-text-align: center;  
-}
-  h1 {
-    font-size: 64px;
-}
-h3 {
-    color: #211D1D;
-    font-size: 18px;
-    font-weight: 100;
-}
-h3 .highlight {
-    color: #32BBA4;
-    font-weight: 700;
-}
-.container {
-    margin: 0 auto;
-	float: none;
 }
 
-.row:first-child {
-    background: url('../images/Mask Group 1.png'), #F9FFF2;
-    height: 500px;
+.container .row:first-child {
+    background: url("../images/Mask Group 1.png"),#F9FFF2;
+    background-size: cover;
+    border: 2px solid #F9FFF2;
 }
-
-.navigation-bar {
-    width: 70%;  
+.nav-pricing-description-container {
+    width: 80%;
     margin: 0 auto;
 }
-.pricing-text {
-    margin: 0 auto;
-    max-width: 32%;
+.nav-pricing-description-container .nav-text {
+    margin-top: 20px;
 }
 
-nav * {
-    cursor: pointer;
+ul.menu {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
 }
-nav .logo {
-    float: left;
-    clear: right;
+
+.nav-pricing-description-container .nav-text .nav-bar li {
+    display: inline;
+    padding: 14px 16px;
+}   
+
+.nav-pricing-description-container .nav-text .nav-bar li a {
+    text-decoration: none;
+    color: #8E8E8E;
 }
-nav button {
+
+.nav-pricing-description-container .nav-text .nav-bar img {
+    clear: both;
+}
+
+.nav-pricing-description-container .nav-text .nav-bar li .sign-up-button {
     background-color: #410FF8;
     padding: 8px 25px;
     color: white;
@@ -70,19 +60,120 @@ nav button {
     border-radius: 5px;
 }
 
-nav button:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-nav a{
-    text-decoration: none;
-    color: #8E8E8E;
+.nav-pricing-description-container .nav-text .nav-bar li button:hover, .card-container .card-content .indexing-button-div  .indexing-button:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
-.nav-right {
-    float: right;
-    /* clear: both; */
+.nav-pricing-description-container .nav-text .pricing-description {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.nav-pricing-description-container .pricing-description .top-text {
+    font-size: 65px;
 }
 
-.nav-right a, .nav-right button {
-    margin-left: 20px;
+.nav-pricing-description-container .pricing-description .bottom-text {
+    max-width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.nav-pricing-description-container .pricing-description .bottom-text .highlight{
+    font-weight: bold;
+    color: #32BBA4;
+}
+
+
+.card-container {
+    width: 80%;
+    margin: 20px auto 30px;
+    /* border: 2px solid purple; */
+}
+
+.card {
+    width: 30%;
+    display: inline-block;
+    border: 1px solid #BBBBBB;
+    margin-top: 10px;
+    margin-right: 4.5%;
+}
+
+.card:nth-child(3n + 3) {
+    margin-right: 0;
+}
+
+.card-content {
+    padding: 20px 20px 40px 20px;
+}
+
+.card-content .plan-type {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-content .plan-monthly-cost {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.card-content .plan-annual-cost {
+    font-size: 14px;
+    color: #A1A1A1;
+}
+.card-content .indexing-button-div {
+    margin: 10px auto;
+}
+.card-content .indexing-button-div .indexing-button {
+    background-color: #410FF8;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    font: inherit;
+    font-weight: bold;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.card-content .plan-details {
+    list-style: none;
+    padding: 0;
+}
+
+.card-content .plan-details .plan-detail {
+    font-size: 14px;
+    background: url(../Checkmark.png) no-repeat left top; /* <-- change `left` & `top` too for extra control */
+    padding: 3px 0px 3px 25px;
+    margin-top: 15px;
+}
+
+.card:hover {
+    background: #410FF8;
+    color: white;
+}
+
+.card-content:hover .plan-annual-cost {
+    font-size: 14px;
+    color: #AB94FF;
+}
+
+.card-content:hover .indexing-button-div .indexing-button {
+    background: #FFFFFF;
+    color: #410FF8;
+}
+
+.card-content:hover .plan-details .plan-detail {
+    font-size: 14px;
+    background: url(../Checkmark-1.png) no-repeat left top; 
+    padding: 3px 0px 3px 25px;
+}
+
+@media only screen and (max-width: 768px)  {
+    .card {
+        width: 100%;
+        border: 1px solid #BBBBBB;
+        margin-top: 10px;
+    }
+
 }
