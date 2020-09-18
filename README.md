@@ -7,5 +7,8 @@ Get as close as possible to the design. Don't bother too much with pixel-perfect
 ## Where can I publish my code and/or results?
 You can post your results on the /r/GoodCodeChallenge subreddit, created just for this website. 
 
+###
+[Link to the page of challenges](https://moeminm.github.io/goodcode/ "Link to the page of challenges")
+
 I'm always looking for feedback to improve any project I work, if you have any, please DM me at my e-mail over at moeminmamdouh@hotmail.com
 Thank you and have a wonderful day!
