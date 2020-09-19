@@ -5,7 +5,7 @@ html {
 *, 
 *:before, 
 *:after {
-box-sizing: inherit;
+box-sizing: border-box;
 }
 
 body {
@@ -169,7 +169,7 @@ ul.menu {
     padding: 3px 0px 3px 25px;
 }
 
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 920px)  {
     .card {
         width: 100%;
         border: 1px solid #BBBBBB;
