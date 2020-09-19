@@ -62,7 +62,7 @@ ul.menu {
 
 .nav-pricing-description-container .nav-text .nav-bar li button:hover, .card-container .card-content .indexing-button:hover{
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.3s;
+    transition: 0.35s;
     cursor: pointer;
 }
 
@@ -97,7 +97,7 @@ ul.menu {
     border: 1px solid #BBBBBB;
     margin-top: 10px;
     margin-right: 4.5%;
-    transition: 0.3s;
+    transition: 0.35s;
 }
 
 .card:nth-child(3n + 3) {
