@@ -14,10 +14,41 @@ body {
     padding: 0;
 }
 
-.container .row:first-child {
+/* .container .row:first-child {
     background: url("../images/Mask Group 1.png"),#F9FFF2;
     background-size: cover;
     border: 2px solid #F9FFF2;
+} */
+
+@media only screen and (max-width: 479px)  {
+    .container .row:first-child {
+        background: url("../images/Mask Group vertical.png"),#F9FFF2;
+        background-size: cover;
+        border: 2px solid #F9FFF2;
+    }
+}
+@media only screen and (min-width: 480px)  {
+    .container .row:first-child {
+        background: url("../images/Mask Group Landscape.png"),#F9FFF2;
+        background-size: cover;
+        border: 2px solid #F9FFF2;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container .row:first-child {
+        background: url("../images/Mask Group 1.png"),#F9FFF2;
+        background-size: cover;
+        border: 2px solid #F9FFF2;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container .row:first-child {
+        background: url("../images/Mask\ Group\ vertical.png"),#F9FFF2;
+        /* background-size: cover; */
+        border: 2px solid #F9FFF2;
+    }
 }
 .nav-pricing-description-container {
     width: 80%;
@@ -37,15 +68,24 @@ ul.menu {
 .nav-pricing-description-container .nav-text .nav-bar li {
     display: inline;
     padding: 14px 16px;
-}   
+}
+
 
 .nav-pricing-description-container .nav-text .nav-bar li a {
     text-decoration: none;
     color: #8E8E8E;
 }
 
+.nav-pricing-description-container .nav-text .nav-bar li a:hover {
+    color: #545454;
+}
+
 .nav-pricing-description-container .nav-text .nav-bar img {
     clear: both;
+}
+
+.nav-pricing-description-container .nav-text .nav-bar img:hover {
+    cursor: pointer;
 }
 
 .nav-pricing-description-container .nav-text .nav-bar li .sign-up-button {
