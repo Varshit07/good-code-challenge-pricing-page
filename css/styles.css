@@ -137,6 +137,7 @@ ul.menu {
     border: 1px solid #BBBBBB;
     margin-top: 10px;
     margin-right: 4.5%;
+    transition: 0.3s;
 }
 
 .card:nth-child(3n + 3) {
