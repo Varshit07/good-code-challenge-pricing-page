@@ -1,0 +1,220 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+box-sizing: border-box;
+}
+
+body {
+    font-family: DM Sans, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* .container .row:first-child {
+    background: url("../images/Mask Group 1.png"),#F9FFF2;
+    background-size: cover;
+    border: 2px solid #F9FFF2;
+} */
+
+@media only screen and (max-width: 479px)  {
+    .container .row:first-child {
+        background: url("../images/Mask Group vertical.png"),#F9FFF2;
+        background-size: cover;
+        border: 2px solid #F9FFF2;
+    }
+}
+@media only screen and (min-width: 480px)  {
+    .container .row:first-child {
+        background: url("../images/Mask Group Landscape.png"),#F9FFF2;
+        background-size: cover;
+        border: 2px solid #F9FFF2;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container .row:first-child {
+        background: url("../images/Mask Group 1.png"),#F9FFF2;
+        background-size: cover;
+        border: 2px solid #F9FFF2;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container .row:first-child {
+        background: url("../images/Mask\ Group\ vertical.png"),#F9FFF2;
+        /* background-size: cover; */
+        border: 2px solid #F9FFF2;
+    }
+}
+.nav-pricing-description-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-pricing-description-container .nav-text {
+    margin-top: 20px;
+}
+
+ul.menu {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-pricing-description-container .nav-text .nav-bar li {
+    display: inline;
+    padding: 14px 16px;
+}
+
+
+.nav-pricing-description-container .nav-text .nav-bar li a {
+    text-decoration: none;
+    color: #8E8E8E;
+}
+
+.nav-pricing-description-container .nav-text .nav-bar li a:hover {
+    color: #545454;
+}
+
+.nav-pricing-description-container .nav-text .nav-bar img {
+    clear: both;
+}
+
+.nav-pricing-description-container .nav-text .nav-bar img:hover {
+    cursor: pointer;
+}
+
+.nav-pricing-description-container .nav-text .nav-bar li .sign-up-button {
+    background-color: #410FF8;
+    padding: 8px 25px;
+    color: white;
+    font: inherit;
+    border: 0;
+    outline: none;
+    font-weight: 700;
+    size: 18px;
+    border-radius: 5px;
+}
+
+.nav-pricing-description-container .nav-text .nav-bar li button:hover, .card-container .card-content .indexing-button:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+.nav-pricing-description-container .nav-text .pricing-description {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.nav-pricing-description-container .pricing-description .top-text {
+    font-size: 65px;
+}
+
+.nav-pricing-description-container .pricing-description .bottom-text {
+    max-width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.nav-pricing-description-container .pricing-description .bottom-text .highlight{
+    font-weight: bold;
+    color: #32BBA4;
+}
+
+
+.card-container {
+    width: 80%;
+    margin: 20px auto 30px;
+}
+
+.card {
+    width: 30%;
+    display: inline-block;
+    border: 1px solid #BBBBBB;
+    margin-top: 10px;
+    margin-right: 4.5%;
+}
+
+.card:nth-child(3n + 3) {
+    margin-right: 0;
+}
+
+.card-content {
+    padding: 20px 20px 40px 20px;
+}
+
+.card-content .plan-type {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-content .plan-monthly-cost {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.card-content .plan-annual-cost {
+    font-size: 14px;
+    color: #A1A1A1;
+}
+
+.card-content .indexing-button {
+    display: block;
+    width: 100%;
+    background-color: #410FF8;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    margin: 10px 0px;
+    font: inherit;
+    font-weight: bold;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.card-content .plan-details {
+    list-style: none;
+    padding: 0;
+}
+
+.card-content .plan-details .plan-detail {
+    font-size: 14px;
+    background: url(../Checkmark.png) no-repeat left top; /* <-- change `left` & `top` too for extra control */
+    padding: 3px 0px 3px 25px;
+    margin-top: 15px;
+}
+
+.card:hover {
+    background: #410FF8;
+    color: white;
+    transition: 0.35s;
+}
+
+.card-content:hover .plan-annual-cost {
+    font-size: 14px;
+    color: #AB94FF;
+}
+
+.card-content:hover .indexing-button {
+    background: #FFFFFF;
+    color: #410FF8;
+}
+
+.card-content:hover .plan-details .plan-detail {
+    font-size: 14px;
+    background: url(../Checkmark-1.png) no-repeat left top; 
+    padding: 3px 0px 3px 25px;
+}
+
+@media only screen and (max-width: 920px)  {
+    .card {
+        width: 100%;
+        border: 1px solid #BBBBBB;
+        margin-top: 10px;
+    }
+
+}
