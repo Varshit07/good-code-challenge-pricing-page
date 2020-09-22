@@ -3,8 +3,8 @@ html {
 }
 
 *, 
-*:before, 
-*:after {
+*::before, 
+*::after {
 box-sizing: border-box;
 }
 
@@ -14,11 +14,11 @@ body {
     padding: 0;
 }
 
-/* .container .row:first-child {
+.container .row:first-child {
     background: url("../images/Mask Group 1.png"),#F9FFF2;
     background-size: cover;
     border: 2px solid #F9FFF2;
-} */
+}
 
 @media only screen and (max-width: 479px)  {
     .container .row:first-child {
@@ -136,7 +136,7 @@ ul.menu {
     display: inline-block;
     border: 1px solid #BBBBBB;
     margin-top: 10px;
-    margin-right: 4.5%;
+    margin-right: 5%;
 }
 
 .card:nth-child(3n + 3) {
